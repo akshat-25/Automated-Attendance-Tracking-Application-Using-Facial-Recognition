@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context=".ListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayoutListActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/appBarListActivity"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="@color/white"
+                app:navigationIcon="@drawable/back"
+                app:navigationIconTint="@color/white"
+                app:title="Attendance Record"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/selectedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date : "
+            android:textSize="35sp"
+            android:textColor="@color/mainColor"
+            android:gravity="center_horizontal"
+            android:layout_margin="25dp"
+            android:textStyle="bold"
+            android:layout_below="@id/appBarLayoutListActivity"/>
+
+
+
+        <TextView
+            android:id="@+id/contentListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:layout_below="@id/selectedDate"
+            android:layout_margin="35dp"/>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

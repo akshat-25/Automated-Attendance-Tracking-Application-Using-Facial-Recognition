@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "790343724193",
+    "project_id": "attendancetracker-be70a",
+    "storage_bucket": "attendancetracker-be70a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790343724193:android:c927daadb3753c49d914e0",
+        "android_client_info": {
+          "package_name": "com.example.attendancetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790343724193-vmfmvu94t12uo5tfpjg92hqj847t2epr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.attendancetracker",
+            "certificate_hash": "39c7f9d65b92e19179f382e039b4e6999ddaf6e4"
+          }
+        },
+        {
+          "client_id": "790343724193-7duggo064v1bfsqmo7qg3bi39hoklkj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9VzOp8_gdPP4lG8SAdZ14qLOtfrHvreQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790343724193-7duggo064v1bfsqmo7qg3bi39hoklkj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

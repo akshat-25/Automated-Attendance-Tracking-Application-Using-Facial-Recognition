@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="@color/white">
+
+<ImageView
+    android:id="@+id/feedbackImage"
+    android:layout_width="0dp"
+    android:layout_height="270dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:srcCompat="@drawable/feedback_background"
+    android:scaleType="centerCrop"
+    android:layout_marginTop="70dp"/>
+
+<TextView
+    android:id="@+id/feedbackText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/feedbackImage"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:text="FeedBack"
+    android:textColor="@color/mainColor"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:textSize="35sp"
+    android:textStyle="bold"
+    android:textAllCaps="true"/>
+
+
+
+<EditText
+    android:id="@+id/feedbackData"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/rounded_edittext"
+    android:hint="Write your Feedback here"
+    android:padding="10dp"
+    android:textColor="@color/black"
+    android:textColorHint="@color/grey"
+    android:gravity="top"
+    android:maxLength="400"
+    app:layout_constraintTop_toBottomOf="@id/feedbackText"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:textSize="20sp"
+    android:inputType="textMultiLine|textCapSentences"/>
+
+
+<Button
+    android:id="@+id/sendButton"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    app:layout_constraintTop_toBottomOf="@id/feedbackData"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="250dp"
+    android:layout_marginRight="15dp"
+    android:backgroundTint="@color/mainColor"
+    android:text="Send"
+    android:textSize="18sp"
+    android:textColor="@color/white"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

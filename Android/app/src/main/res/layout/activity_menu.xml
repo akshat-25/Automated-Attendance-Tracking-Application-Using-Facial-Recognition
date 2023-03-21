@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/mainPageImage"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/main_page"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/textViewMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Menu"
+        android:textColor="@color/secondaryColorThree"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainPageImage" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/loginStudentBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login as Student"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/textViewMenu"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:gravity="center"
+        android:backgroundTint="@color/secondaryColorTwo"
+        android:layout_marginTop="80sp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:elevation="90dp"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/loginFacultyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login As Faculty"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/loginStudentBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30sp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:gravity="center"
+        android:backgroundTint="@color/secondaryColorTwo"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
